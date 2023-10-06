@@ -1,0 +1,854 @@
+:root {
+    --primary-color: #F8C100;
+    --seckound-colour: #CECECE;
+}
+
+body {
+    color: #fff;
+    background: #000;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    font-family: sans-serif;
+}
+
+.yellow {
+    color: var(--primary-color);
+}
+
+.announcement {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars__wrapper {
+    display: block;
+}
+
+.announcement-title p {
+    margin: 12px 0;
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    padding: 0 5px;
+}
+
+/* Home KV */
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 10px;
+}
+
+.blure_effect {
+    display: block;
+    position: absolute;
+    width: 365px;
+    height: 203px;
+    flex-shrink: 0;
+    background: var(--primary-color);
+    filter: blur(300px);
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 88px;
+    font-weight: 400;
+}
+
+.title span {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.text-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 5;
+}
+
+.home-title {
+    display: inline-block;
+    font-size: 6.5rem;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+.description {
+    color: var(--seckound-colour);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.home {
+    min-height: 525px;
+}
+
+.image__wrapper .bottle_img {
+    width: 519px;
+    height: 436px;
+    transform: rotate(-10.924deg);
+    position: absolute;
+    right: 167px;
+    bottom: -113px;
+}
+
+.girl_image {
+    position: absolute;
+    width: 419px;
+    height: 629px;
+    right: 0;
+    top: 45px;
+}
+
+.btn {
+    display: flex;
+    width: 16.9375rem;
+    height: 3.625rem;
+    padding: 1.4375rem 11.4375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 6.25rem;
+    background: var(--primary-color);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    border: none;
+    cursor: pointer;
+}
+
+.text-wrapper .btn:hover {
+    content: "";
+    background: none;
+    border:1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: transform 0.3s s;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\027F6';
+    position: absolute;
+    opacity: 0;
+    top: -17px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+  }
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.home-effects .blure_effect{
+    top: 320px;
+    left: 40px;
+}
+
+.home-effects .blure_effect__secound {
+    left: 1050px;
+    top: 150px;
+}
+/* Carusel section */
+
+
+.cards {
+    margin-top: 55px;
+    z-index: 3;
+}
+
+.cards .text__wrapper {
+    display: block;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.bottom .title {
+    margin-right: 24px;
+}
+.cards .description {
+    margin-top: 24px;
+    display: block;
+    max-width: 556px;
+}
+
+.card__wrapper {
+    display: block;
+    margin-top: 32px;
+}
+
+.card__wrapper ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+.card_title {
+    margin-top: 16px;
+    color: var(--seckound-colour);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: normal;
+}
+
+/* Arrow section */
+
+.arrow__component .text__wrapper {
+    text-align: center;
+    margin-top: 144px;
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1082px;
+    position: relative;
+}
+
+.text__component-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text_component {
+    position: absolute;
+    width: 228px;
+    text-align: center;
+}
+
+.text__component-wrapper li:first-child {
+    left: 0px;
+    top: 25px;
+}
+
+.text__component-wrapper li:nth-child(2) {
+    right: 0;
+    top: 63px;
+}
+
+.text__component-wrapper li:nth-child(3) {
+    left: 78px;
+    bottom: 9px;
+}
+
+.text__component-wrapper li:last-child {
+    right: 68px;
+    bottom: 0px;
+}
+
+.content__wrapper .content_img {
+    width: 550px;
+    height: 555px;
+}
+
+.content_img {
+    margin-left: 50px;
+}
+
+.text_component .title {
+    display: block;
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text_component .desctiption {
+    color: var(--seckound-colour);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+}
+.content_img {
+    display: block;
+    margin: 0 auto;
+    padding-left: 25px;
+    z-index: 2;
+}
+
+.arrow img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    position: absolute;
+}
+
+.arrow__wrapper li:first-child {
+    top: 56px;
+    left: 228px;
+}
+
+.arrow__wrapper li:nth-child(2) {
+    top: 80px;
+    right: 215px;
+    transform: scale(-1, 1)
+}
+
+.arrow__wrapper li:nth-child(3) {
+    bottom: 20px;
+    left: 320px;
+    transform: rotate(90deg);
+}
+
+.arrow__wrapper li:last-child {
+    bottom: 117px;
+    right: 215px;
+    transform: rotate(10deg);
+}
+
+.arrow__component .blure_effect {
+    bottom: 180px;
+    right: 370px;
+}
+
+
+/* Video section */
+
+.video_source {
+    margin-top: 144px;
+}
+
+.video_title {
+    text-align: center;
+}
+.video__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+}
+
+.video_item {
+    position: absolute;
+    bottom: -360px;
+    width: 1160px;
+    max-height: 1245px;
+}
+
+
+/* comparison section */
+
+.comparison__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 144px;
+}
+
+.comparison__wrapper .text__wrapper {
+    display: block;
+    position: relative;
+}
+
+.comparison__wrapper .text__wrapper .description {
+    margin-top: 15px;
+}
+.comparison__title span {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.table__wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+.row p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.table {
+    margin-top: 45px;
+    width: 688px;
+    height: 387px;
+}
+.row img{
+    width: 30px;
+    height: 30px
+}
+.row-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-item--1,
+.row-item--4,
+.row-item--7,
+.row-item--10 {
+    background-color: var(--seckound-colour);
+    color: #000;
+    justify-content: flex-start;
+    padding-left: 70px;
+}
+
+.row-item--2,
+.row-item--5,
+.row-item--8,
+.row-item--11 {
+    background-color: var(--primary-color);
+}
+.row-item--1 {
+    border-top-left-radius: 16px;
+}
+.row-item--3 {
+    border-top-right-radius: 16px;
+}
+.row-item--12 {
+    border-bottom-right-radius: 16px;
+}
+.row-item--10 {
+    border-bottom-left-radius: 16px;
+}
+.row-item--3,
+.row-item--6,
+.row-item--9,
+.row-item--12 {
+    background-color: #1E1E1E;
+}
+
+.row-item--1,
+.row-item--2, 
+.row-item--3 {
+    border-bottom: 1px solid #000;
+    padding: 25px 30px;
+}
+
+.row-item--1 img{
+    width: 95px;
+    height: 44px;
+}
+
+.row-item--2 img, 
+.row-item--3 img {
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
+}
+.row-item--1 {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-item--4 {
+    grid-column: 1 / span 3;
+    grid-row: 2 /span 1;
+    font-size: 16px;
+}
+
+.row-item--7 {
+    grid-column: 1 / span 3;
+    grid-row: 3 /span 1;
+}
+
+.row-item--10 {
+    grid-column: 1 / span 3;
+    grid-row: 4 /span 1;
+}
+
+.mobile_btn {
+    display: none;
+}
+
+.btn_round {
+    display: block;
+    position: absolute;
+    top: 335px;
+    right: 635px;
+    padding: 0;
+    z-index: 2;
+    width: 170px;
+    height: 170px;
+    border: none;
+}
+
+.btn_round p {
+    color: #0B0B0B;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.table__wrapper .blure_effect {
+    z-index: -1;
+    left: 0;
+    bottom: 14px;
+}
+
+/* Footer */
+
+footer {
+    background-color:#1E1E1E;
+    margin-top: 144px;
+}
+
+.footer_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 0 26px 0;
+    justify-content: space-evenly;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.footer_navigation p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}
+
+.border {
+    display: block;
+    border: 1px solid #4E4E4E;
+}
+
+.terms {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 953px;
+    padding: 23px 0;
+}
+
+.terms p {
+    color: #CECECE;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 174%;
+}
+
+@media screen and (max-width: 970px) {
+    .comparison__title span {
+        position: static;
+    }
+    .blure_effect__secound {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 920px) {
+    .container{
+        padding: 0 25px;
+    }
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .image__wrapper {
+        margin: 0 120px;
+    }
+    .text__wrapper .bottom {
+        flex-direction: column;
+    }
+    .content__wrapper .content_img {
+        width: 326px;
+        height: 329px;
+    }
+    .text__component-wrapper li:first-child {
+        left: 0px;
+        top: 25px;
+    }
+    
+    .text__component-wrapper li:nth-child(2) {
+        right: 0;
+        top: 30px;
+    }
+    
+    .text__component-wrapper li:nth-child(3) {
+        left: 78px;
+        bottom: 0;
+    }
+    
+    .text__component-wrapper li:last-child {
+        right: 68px;
+        bottom: 0px;
+    }
+    .arrow__wrapper li:first-child {
+        top: 20px;
+        left: 210px;
+    }
+    
+    .arrow__wrapper li:nth-child(2) {
+        top: 8px;
+        right: 163px;
+        transform: scale(-1, 1)
+    }
+    
+    .arrow__wrapper li:nth-child(3) {
+        bottom: -52px;
+        left: 257px;
+        transform: rotate(119deg);
+    }
+    
+    .arrow__wrapper li:last-child {
+        bottom: 117px;
+        right: 112px;
+        transform: rotate(10deg);
+    }
+    .video_title {
+        display: flex;
+        flex-direction: column;
+    }
+    .video__wrapper {
+        height: 470px;
+    }
+    .video_item {
+        width: 820px;
+        bottom: -275px
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .home {
+        min-height: 640px;
+    }
+
+    .image__wrapper .bottle_img {
+        bottom: 17px;
+    }
+    .girl_image {
+        width: 333px;
+        height: 513px;
+        right: 155px;
+        top: 109px;
+    }
+    .btn_round {
+        display: none;
+    }
+
+    .table__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile_btn {
+        display: flex;
+        width: 344px;
+        height: 58px;
+        padding: 23px 183px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .image__wrapper .bottle_img {
+        right: 0;
+    }
+    .girl_image {
+       right: 0;
+    }
+    .arrow__wrapper li:nth-child(2),
+    .arrow__wrapper li:last-child,
+    .arrow__wrapper li:first-child {
+        display: none;
+    }
+    .arrow__wrapper li:nth-child(3) {
+        bottom: 380px;
+        left: 244px;
+        transform: rotate(175deg);
+    }
+    .arrow__wrapper li:nth-child(3) img {
+        transform: scale(-1, 1);
+    }
+    .text__component-wrapper {
+        flex-direction: column;
+    }
+    .content__wrapper {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .text_component {
+        position: static;
+        text-align: left;
+        padding: 10px;
+    }
+    .table {
+        width: 575px;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .btn {
+        padding: 0.4375rem 8.4375rem;
+        gap: 0;
+    }
+    .video__wrapper {
+        height: 280px;
+    }
+    .video_item {
+        width: 490px;
+        bottom: -165px
+    }
+    .video_source {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home {
+    }
+
+    .image__wrapper .bottle_img {
+        width: 372.815px;
+        height: 303.328px;
+        top: 208px;
+    }
+    .girl_image {
+        width: 255px;
+        height: 384px;
+        top: 195px;
+    }
+    .image__wrapper {
+        margin: 0;
+    }
+    .arrow__component .text__wrapper {
+        margin-top: 80px;
+    }
+    footer {
+        margin-top: 80px;
+    }
+    .announcement-title p {
+        font-size: 16px;
+    }
+    .stars__wrapper svg {
+        width: 16px;
+    }
+    .table {
+        width: 475px;
+    }
+    .row-item--1, .row-item--4, .row-item--7, .row-item--10 { 
+        padding-left: 21px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .home {
+        margin-top: 30px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .image__wrapper .bottle_img {
+        width: 375px;
+    }
+
+    .text-wrapper .btn {
+        position: absolute;
+        top: 550px;
+        display: flex;
+        width: 335px;
+        height: 58px;
+        padding: 23px 18px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__wrapper .item img {
+        width: 345px;
+        height: 100%;
+        padding-left: 0;
+    }
+    .arrow__wrapper li:nth-child(3) {
+        bottom: 415px;
+        left: 190px;
+        transform: rotate(175deg);
+    }
+    .video__wrapper {
+        height: 200px;
+    }
+    .video_item {
+        width: 350px;
+        bottom: -116px
+    }
+    .video_source {
+        margin-top: 60px;
+    }
+    .table {
+        width: 335px;
+    }
+    .row-item--1, .row-item--2, .row-item--3 {padding: 0;}
+    .container{
+        padding: 0 15px;
+    }
+    .video_title {
+        margin-top: 80px;
+        padding-bottom: 20px;
+    }
+}
